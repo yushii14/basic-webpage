@@ -1,79 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ca">
 <head>
   <meta charset="UTF-8">
-  <title>My Book Haven</title>
+  <title>Basic Webpage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
   <style>
+     html {
+        background-color: white;
+      }
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #fdfdfd;
-      color: #333;
+      color: black;
     }
 
-    header {
-      background-color: #6a4caf;
-      color: white;
+    h1 {
+      margin: 20px;
+      font-size: 60px;
       text-align: center;
-      padding: 20px;
+      font-family: "Swanky and Moo Moo", cursive;
+      font-weight: 400;
+      font-style: normal;
+      
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header h2 {
-      margin-top: 5px;
-      font-weight: normal;
-      font-size: 22px;
-    }
-
-    /* Navigation bar */
-    nav {
-      margin-top: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
+    h2 {
+      font-family: "Swanky and Moo Moo", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 35px;
     }
 
     main {
-      margin: 30px 50px;
+      max-width: width;
       padding: 20px;
-      background: pink;
-      border-radius: 8px;
+      background: white;    
     }
 
-    .book-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-    }
-
-    .book {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      border-radius: 6px;
-      width: 300px; /* fixed width */
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .book img {
+    img {
+      display: block;
       max-width: 100%;
       height: auto;
-      margin-bottom: 10px;
-      border-radius: 4px;
     }
 
     a {
@@ -99,44 +67,19 @@
   <!-- Header section -->
   <header>
     <h1>My Book Haven</h1>
-    <h2>A Place for Book Lovers</h2>
-
-    <!-- Navigation -->
-    <nav>
-      <a href="#">Home</a>
-      <a href="#favorites">My Favorite Books</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
   <!-- Main content section -->
   <main>
+    <h2>A Place for Book Lovers</h2>
     <p>Welcome to <b>My Book Haven</b>, where I share my favorite reads, reviews, and recommendations.</p>
+    
+    <p>Here’s a cozy reading corner:</p>
+    <img src="album cover" alt="Books on a shelf">
 
-    <h2 id="favorites">My Favorite Books</h2>
-
-    <div class="book-list">
-      <!-- Book 1 -->
-      <div class="book">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81OtwkiB2hL.jpg" alt="To Kill a Mockingbird book cover">
-        <h3>To Kill a Mockingbird</h3>
-        <p>By Harper Lee — A powerful novel about justice, empathy, and growing up in the Deep South.</p>
-      </div>
-
-      <!-- Book 2 -->
-      <div class="book">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL.jpg" alt="Harry Potter and the Sorcerer's Stone book cover">
-        <h3>Harry Potter and the Sorcerer’s Stone</h3>
-        <p>By J.K. Rowling — The magical beginning of the Harry Potter series, full of wonder and adventure.</p>
-      </div>
-
-      <!-- Book 3 -->
-      <div class="book">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="The Great Gatsby book cover">
-        <h3>The Great Gatsby</h3>
-        <p>By F. Scott Fitzgerald — A timeless story of love, wealth, and the American Dream in the 1920s.</p>
-      </div>
-    </div>
+    <h2>Favorite Book Recommendation</h2>
+    <p>One of my all-time favorites is <b>"To Kill a Mockingbird"</b> by Harper Lee.  
+       It’s a timeless story about justice, compassion, and understanding others.</p>
 
     <p>If you’d like to explore more amazing books, check out  
        <a href="https://www.goodreads.com/" target="_blank">Goodreads</a>.
@@ -144,8 +87,8 @@
   </main>
 
   <!-- Footer section -->
-  <footer id="contact">
-    <p>2025 My Book Haven | Built with ❤️ for book lovers</p>
+  <footer>
+    <p>&copy; 2025 My Book Haven | Built with ❤️ for book lovers</p>
   </footer>
 </body>
 </html>
