@@ -1,224 +1,151 @@
 <!DOCTYPE html>
-<html lang="eng-ca">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Contact Page</title>
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book Haven</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+    }
 
-    <style>
-      html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-color: MistyRose;
-      }
+    header {
+      background-color: #6a4caf;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-      /*  
-Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
-Author: W3Schools
-Name: Horizontal Navigation Bar Examples
-Description: Format on how to code a horizontal navigation bar
-Date retrieved: March 27, 2025
- */
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #F9F2EA;
-      }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
 
-      li {
-        float: right;
-      }
+    header h2 {
+      margin-top: 5px;
+      font-weight: normal;
+      font-size: 22px;
+    }
 
-      li a {
-        display: block;
-        text-align: center;
-        padding: 30px 25px;
-        text-decoration: none;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: bold;
-        color: PaleVioletRed;
-        font-size: 20px;
-      }
+    /* Navigation bar */
+    nav {
+      margin-top: 15px;
+    }
 
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-      #header {
-        margin: 0px;
-        width: 100%;
-        background-color: #F9F2EA;
-        height: 80px;
-        position: fixed;
-        top: 0;
-        left: 0
-      }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-      #footer {
-        margin: 0;
-        width: 100%;
-        background-color: MistyRose;
-        height: 100px;
-        position: relative;
-        top: 388px;
-      }
+    main {
+      margin: 30px 50px;
+      padding: 20px;
+      background: pink;
+      border-radius: 8px;
+    }
 
-      .footertext {
-        position: relative;
-        top: 50px;
-        text-align: center;
-        font-size: 12px;
-      }
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
 
+    .book {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 6px;
+      width: 300px; /* fixed width */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
+    .book img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
 
-      #pageheader {
-        width: 100%;
-        height: 500px;
-        background-color: MistyRose;
-        position: relative;
-        left: 0;
-        z-index: -1;
-      }
+    a {
+      color: #6a4caf;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-      #block1 {
-        background-color: PaleVioletRed;
-        width: 100%;
-        height: 400px;
-        box-sizing: border-box;
-        position: absolute;
-        left: 0;
-      }
+    a:hover {
+      text-decoration: underline;
+    }
 
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>My Book Haven</h1>
+    <h2>A Place for Book Lovers</h2>
 
+    <!-- Navigation -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#favorites">My Favorite Books</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      h1 {
-        font-family: "Cormorant Garamond", serif;
-        font-optical-sizing: auto;
-        font-weight: 10;
-        color: PaleVioletRed;
-        font-size: 100px;
+  <!-- Main content section -->
+  <main>
+    <p>Welcome to <b>My Book Haven</b>, where I share my favorite reads, reviews, and recommendations.</p>
 
-      }
+    <h2 id="favorites">My Favorite Books</h2>
 
-      h2 {
-        font-family: "Italianno", cursive;
-        font-size: 150px;
-        font-weight: 400;
-        font-style: normal;
-        color: PaleVioletRed;
-      }
+    <div class="book-list">
+      <!-- Book 1 -->
+      <div class="book">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81OtwkiB2hL.jpg" alt="To Kill a Mockingbird book cover">
+        <h3>To Kill a Mockingbird</h3>
+        <p>By Harper Lee — A powerful novel about justice, empathy, and growing up in the Deep South.</p>
+      </div>
 
-      .title1 {
-        position: relative;
-        text-align: center;
-        top: 140px;
-      }
+      <!-- Book 2 -->
+      <div class="book">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL.jpg" alt="Harry Potter and the Sorcerer's Stone book cover">
+        <h3>Harry Potter and the Sorcerer’s Stone</h3>
+        <p>By J.K. Rowling — The magical beginning of the Harry Potter series, full of wonder and adventure.</p>
+      </div>
 
-      .title2 {
-        position: relative;
-        text-align: center;
-        bottom: 70px;
-
-      }
-
-
-
-
-      p {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        color: PaleVioletRed;
-      }
-
-      table,
-      th,
-      td {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        border: 5px solid PaleVioletRed;
-        border-collapse: collapse;
-        text-align: left;
-        padding: 20px;
-        margin-left: 125px;
-        margin-top: 80px;
-        color: PaleVioletRed;
-      }
-
-      th,
-      td {
-        background-color: #F9F2EA;
-
-      }
-    </style>
-  </head>
-
-  <body>
-
-
-    <div id="pageheader">
-      <h1 class="title1">
-        Let's keep in
-      </h1>
-      <h2 class="title2">
-        touch
-      </h2>
+      <!-- Book 3 -->
+      <div class="book">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81WcnNQ-TBL.jpg" alt="The Great Gatsby book cover">
+        <h3>The Great Gatsby</h3>
+        <p>By F. Scott Fitzgerald — A timeless story of love, wealth, and the American Dream in the 1920s.</p>
+      </div>
     </div>
 
-    <div id="block1">
-      <table style="width:80%">
-        <tr>
-          <th>Category</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td><a style="color:PaleVioletRed;" href="mailto:a3lad@uwaterloo.ca">a3lad@uwaterloo.ca</a></td>
-        </tr>
-        <tr>
-          <td>Phone Number</td>
-          <td>647-334-0514</td>
-        </tr>
-        <tr>
-          <td>Location</td>
-          <td>Waterloo, ON</td>
-        </tr>
-      </table>
+    <p>If you’d like to explore more amazing books, check out  
+       <a href="https://www.goodreads.com/" target="_blank">Goodreads</a>.
+    </p>
+  </main>
 
-
-    </div>
-
-    <div id="footer">
-      <p class="footertext">
-        © 2024 Ayushi Lad. All Rights Reserved.
-      </p>
-    </div>
-
-    <div id="header">
-
-      <ul>
-        <li><a href="https://yushii14.github.io/Portfolio---Contact-Page/">contact</a></li>
-        <li><a href="https://yushii14.github.io/Portfolio---Playground/">playground</a></li>
-        <li><a href="https://yushii14.github.io/Portfolio---Projects/">projects</a></li>
-        <li><a href="https://yushii14.github.io/Portfolio---Main-Page/">home</a></li>
-      </ul>
-    </div>
-
-
-
-
-
-
-
-  </body>
+  <!-- Footer section -->
+  <footer id="contact">
+    <p>2025 My Book Haven | Built with ❤️ for book lovers</p>
+  </footer>
+</body>
 </html>
